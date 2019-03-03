@@ -2,7 +2,7 @@
 
 Book.destroy_all
 
-50.times do
+100.times do
   book = Book.create(title: Faker::Book.unique.title,
                      author: Faker::Book.author,
                      publisher: Faker::Book.publisher,
