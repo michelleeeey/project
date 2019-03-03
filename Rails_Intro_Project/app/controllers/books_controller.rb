@@ -5,5 +5,7 @@ class BooksController < ApplicationController
     @books = Book.order(:title)
   end
 
-  def show; end
+  def show
+    @book = Book.find(params[:id])
+  end
 end

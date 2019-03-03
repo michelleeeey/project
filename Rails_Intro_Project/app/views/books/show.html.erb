@@ -1,2 +1,8 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+<h1>ABC Bookstore</h1>
+
+<h2><%= @book.title%></h2>
+
+ <p>Author: <%= @book.author%></p>
+ <p>Publisher: <%= @book.publisher%></p>
+
+ <p><%= link_to 'Home', root_path%></p>
